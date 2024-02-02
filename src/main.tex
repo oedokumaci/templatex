@@ -1,0 +1,49 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}  % For input encoding
+\usepackage{authblk} % For author and affiliation formatting
+\usepackage{geometry}  % For setting page layout
+\usepackage{graphicx} % For including figures
+\usepackage{amsmath,amssymb} % For mathematical symbols and environments
+\usepackage[colorlinks = true, linkcolor = blue, citecolor = red, anchorcolor = blue]{hyperref} % For hyperlinks in the document, load it before apacite
+\usepackage{apacite} % For better citation handling
+
+% Page layout
+% \geometry{left=1.25cm, right=1.25cm, top=1.25cm, bottom=1.25cm}
+\begin{document}
+
+% Title Page
+\input{sections/00_title_page}
+
+\maketitle
+
+% Abstract
+\input{sections/01_abstract}
+
+% Introduction
+\input{sections/02_introduction}
+
+% Literature Review
+\input{sections/03_literature_review}
+
+% Model
+\input{sections/04_model}
+
+% Results
+\input{sections/05_results}
+
+% Discussion
+\input{sections/06_discussion}
+
+% Conclusion
+\input{sections/07_conclusion}
+
+% References/Bibliography
+\bibliographystyle{apacite}
+\bibliography{references}
+
+% Appendices
+\appendix
+\input{sections/08_appendices}
+
+\end{document}
