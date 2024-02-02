@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/psf/black
-    rev: 23.11.0
+    rev: 24.1.1
     hooks:
       - id: black
 
@@ -90,3 +90,8 @@ repos:
         entry: pdm lock --check
         language: system
         pass_filenames: false
+
+  - repo: https://github.com/cmhughes/latexindent.pl.git
+    rev: V3.23.6
+    hooks:
+      - id: latexindent
